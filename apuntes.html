@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vladimir Ortiz Ochoa">
+    <meta name="description" content="Tabla de apuntes de comandos">
+
+    <title>Tabal de apuntes</title>
+    <style>
+        table, th, td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Apunte de etiquetas</h1>
+    <table>
+        <caption>Etiquetas HTML</caption>
+        <colgroup>
+            <col style="width: 20%">
+            <col style="width: 40%">
+            <col style="width: 40%">
+            <col span="5" style="width: 20%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Etiqueta</th>
+                <th scope="col">Para qué sirve</th>
+                <th scope="col">Ejemplo mínimo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>nav</td><td>Se utiliza para crear una interfaz de de navegación</td>
+            <td><pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li>&lt;a href="index.html">Inicio&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#acerca">Acerca de&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#talleres">Talleres&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="contacto.html">Contacto&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#quimica">Quimica</a>&lt;/li>
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></td></tr>
+
+            <tr><td>pre</td><td>Se utilia para mandar un párrafo o grupo de texto tal cual lo escribimos en el código</td>
+            <td><pre><code>&lt;pre&gt;&lt;code&gt;
+        #include &lt;stdio.h&lt;
+
+        int main ()
+        {
+            printf("Hola Tú");
+            return 0;
+        }</code></pre></td></tr>
+
+            <tr><td>ol</td><td>Se utiliza para la creación de listas enumeradas de acuerdo al orden de escritura de los elementos</td>
+            <td><pre><code>&lt;ol&gt;    
+    &lt;li>Elemento 1.1&lt;/li>
+    &lt;li>Elemento 2.1&lt;/li>
+    &lt;li>Elemento 3.1&lt;/li>
+&lt;/ol&gt;</code></pre></td></tr>
+
+            <tr><td>ul</td><td>Se utiliza para la creación de listas desordenads, solo se ocupan viñetas u listaje que no implica jerarquía</td>
+            <td><pre><code>&lt;ul&gt;
+    &lt;li>Lunes: 10:20 - 12:00&lt;/li>
+    &lt;li>Miércoles: 8:40 - 10:20&lt;/li>
+    &lt;li>Viernes: 8:40 - 9:30&lt;/li>
+&lt;/ul&gt;</code></pre></td></tr>
+
+            <tr><td>p</td><td>Se utiliza para la escritura de líneas de texto dentro de tu página web</td>
+            <td><pre><code>&lt;p&gt;Utilizamos la batidora para preparar la masa.&lt;p&gt;</code></pre></td></tr>
+
+            <tr><td>br</td><td>Se utiliza para realizar saltos de línea al momento de escribir renglones</td>
+            <td><pre><code>&lt;p&gt;Utilizamos la batidora para preparar la masa.&lt;br&gt;Después procedemos a agregar la sal.&lt;p&gt;
+            </code></pre></td></tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
